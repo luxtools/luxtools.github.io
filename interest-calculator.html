@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interest Calculator | LuxTools</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpg" href="./img/file.jpg">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For chart -->
+</head>
+<body>
+  <div id="app">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">LuxTools</a>
+              </div>
+          <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="tools.html">All Tools</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+    <main class="tool-page">
+      <h1 class="centered-title">Interest Calculator</h1>
+      <p class="subtitle">Plan your finances effectively with our online Interest Calculator. Calculate savings growth, interest rates, and optimize your financial planning with ease.</p>
+      
+      <div class="calculator">
+        <div class="input-group">
+          <label for="principal">Initial Amount ($):</label>
+          <input type="number" id="principal" placeholder="Enter the initial amount">
+        </div>
+        
+        <div class="input-group">
+          <label for="monthly-addition">Monthly Addition ($):</label>
+          <input type="number" id="monthly-addition" placeholder="Enter the monthly addition">
+        </div>
+
+        <div class="input-group">
+          <label for="years">Number of Years:</label>
+          <input type="number" id="years" placeholder="Enter the number of years">
+        </div>
+
+        <div class="input-group">
+          <label for="interest-rate">Interest Rate (%):</label>
+          <input type="number" id="interest-rate" placeholder="Enter the interest rate">
+        </div>
+
+        <button onclick="calculateInterest()">Calculate</button>
+
+        <div id="result"></div>
+        
+        <canvas id="interestChart"></canvas> <!-- Graph for results -->
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2024 LuxTools. Crafted with precision.</p>
+    </footer>
+  </div>
+
+  <script src="interest-calculator.js"></script>
+</body>
+</html>

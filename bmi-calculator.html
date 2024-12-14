@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator | LuxTools</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="./img/file.jpg">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html">LuxTools</a>
+                </div>
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="tools.html">All Tools</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="tool-page">
+            <h1 class="centered-title">BMI Calculator</h1>
+            <p class="subtitle">Calculate your Body Mass Index (BMI) with our easy-to-use BMI Calculator. Discover your health status and get actionable insights for a healthier lifestyle.</p>
+            <div class="calculator">
+                <select id="unit-type">
+                    <option value="metric">Metric (kg, m)</option>
+                    <option value="imperial">Imperial (lbs, in)</option>
+                </select>
+
+                <div class="input-group">
+                    <input type="number" id="weight" placeholder="Enter your weight">
+                    <label id="weight-label">Weight (kg)</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="number" id="height" placeholder="Enter your height">
+                    <label id="height-label">Height (m)</label>
+                </div>
+
+                <button id="calculate-btn">Calculate BMI</button>
+
+                <div class="input-group">
+                    <input type="text" id="bmi-result" placeholder="BMI Result" readonly>
+                    <label id="bmi-advice" class="bmi-advice"></label>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 LuxTools. Crafted with precision.</p>
+        </footer>
+    </div>
+
+    <script src="bmi-calculator.js"></script>
+</body>
+</html>

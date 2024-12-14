@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter | LuxTools</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="./img/file.jpg">
+  </head>
+  <body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html">LuxTools</a>
+                  </div>
+              <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="tools.html">All Tools</a>
+                <a href="contact.html">Contact</a>
+              </div>
+            </nav>
+          </header>
+      
+      <main class="tool-page">
+        <h1 class="centered-title">Word Counter</h1>
+        <p class="subtitle">Accurately count words and characters, analyze text length, and improve readability with our free online Word Counter tool. Ideal for writers, students, and content creators.</p>
+        <div class="tool-container">
+          <textarea id="text-input" placeholder="Enter your text here..."></textarea>
+          <div class="stats">
+            <div class="stat-box">
+              <span id="word-count">0</span>
+              <label>Words</label>
+            </div>
+            <div class="stat-box">
+              <span id="char-count">0</span>
+              <label>Characters</label>
+            </div>
+            <div class="stat-box">
+              <span id="sentence-count">0</span>
+              <label>Sentences</label>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+      <footer>
+        <p>© 2024 LuxTools. Crafted with precision.</p>
+      </footer>
+    </div>
+    <script src="word-counter.js"></script>
+  </body>
+</html>

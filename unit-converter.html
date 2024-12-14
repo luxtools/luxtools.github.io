@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter | LuxTools</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="./img/file.jpg">
+  </head>
+  <body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html">LuxTools</a>
+                  </div>
+              <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="tools.html">All Tools</a>
+                <a href="contact.html">Contact</a>
+              </div>
+            </nav>
+          </header>
+      
+      <main class="tool-page">
+        <h1 class="centered-title">Unit Converter</h1>
+        <p class="subtitle">Easily convert units with our free online Unit Converter. Switch between length, weight, temperature, and more—perfect for students, professionals, and everyday users.</p>
+        <div class="converter">
+          <select id="conversion-type">
+            <option value="length">Length</option>
+            <option value="weight">Weight</option>
+            <option value="temperature">Temperature</option>
+          </select>
+          
+          <div class="conversion-inputs">
+            <div class="input-group">
+              <input type="number" id="from-value">
+              <select id="from-unit"></select>
+            </div>
+            
+            <div class="swap-btn">⇄</div>
+            
+            <div class="input-group">
+              <input type="number" id="to-value" readonly>
+              <select id="to-unit"></select>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+      <footer>
+        <p>© 2024 LuxTools. Crafted with precision.</p>
+      </footer>
+    </div>
+    <script src="unit-converter.js"></script>
+  </body>
+</html>
